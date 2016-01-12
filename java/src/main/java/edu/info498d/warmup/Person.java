@@ -12,10 +12,12 @@ public class Person implements Comparable<Person> {
    private String ssn;
    private boolean propertyChangeFired;
   
+  //This is a constructor when no parameters are passed to the People class
    public Person() {
       this("", 0, 0.0);
    }
   
+  //This is a constructor when parameters are passed to the People class
    public Person(String n, int a, double s) {
       name = n;
       age = a;
@@ -115,7 +117,7 @@ public class Person implements Comparable<Person> {
        return this.age + 10;
    }
 
-   //Compares two different People to see if they are the same people
+   //Compares two different People to see if they are the same people through their age and name
     public boolean equals(Object other){
       if (other != null && other instanceof Person) {
           Person p = (Person) other;
@@ -124,7 +126,7 @@ public class Person implements Comparable<Person> {
       return false;
    }
 
-   //Compare two different People, sorting them based on age (older first) then alphabetically
+   //Compare two different People. It then arranges the people in reverse-order based upon age. If the ages are the same, then it sorts them alphabetically
     public int compareTo(Person p) {
       if (age == p.getAge()) {
           return this.name.compareTo(p.getName());
@@ -137,7 +139,7 @@ public class Person implements Comparable<Person> {
       }
    }
 
-   //Compares the salary of two People
+   //Compares the salary of two People and then arranges them based upon salary.
    public static class SalaryComparator implements Comparator<Person>{
        public int compare(Person p1, Person p2) {
            if (p1.salary > p2.salary) {
