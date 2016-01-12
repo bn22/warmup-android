@@ -11,7 +11,7 @@ The below questions should be answered regarding your submission!
 
 
 ##### Did you receive help from any other sources (classmates, etc)? If so, please list who (be specific!). #####
-> I got some help from Raymond Duong, Chau Ngo and Ivy Wong while working on this homework assignment. I also got help from Slack
+> I got some help from Raymond Duong, Chau Ngo and Ivy Wong while working on this homework assignment. I also got help from Slack through the equals method.
 
 
 ##### Did you encounter any problems in this assignment we should warn students about in the future? How can we make the assignment better? #####
