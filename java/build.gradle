@@ -1,8 +1,11 @@
 apply plugin: 'java'
+apply plugin: 'application'
 
 repositories {
     mavenCentral()
 }
+
+mainClassName = "edu.info498d.warmup.Person"
 
 dependencies {
     testCompile 'junit:junit:4.8.2'
